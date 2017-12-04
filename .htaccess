@@ -1,0 +1,23 @@
+
+# BEGIN khmercode.com/
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /khmercode.com/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /khmercode.com/index.php [L]
+</IfModule>
+
+# END khmercode.com/
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /khmercode.com/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /khmercode.com/index.php [L]
+</IfModule>
+
+# END WordPress
